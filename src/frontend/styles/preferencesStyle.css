@@ -1,0 +1,292 @@
+/* Variables for css */
+:root {
+  --primary-color: #ececec;
+  --secondary-color: #b9b9b9;
+  --tertiary-color: #ecececb5;
+  --main-500: #4299e1;
+  --main-400: #63b3ed;
+  --accent-one: #21649f;
+  --accent-two: #41B3A3;
+  --warning: #e29d60;
+  --error: #ee5645;
+  --text: #2b2b2b;
+  --button-text: #c3c3c3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #303030;
+    --secondary-color: #4f4f4f;
+    --tertiary-color: #303030b5;
+    --main-400: #4299e1;
+    --main-500: #63b3ed;
+    --accent-one: #448fd1;
+    --accent-two: #56c6b7;
+    --warning: #eeaf75;
+    --error: #ed7c70;
+    --text: #c3c3c3;
+    --button-text: #2b2b2b;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color:#ff99a3;
+  background-image:
+  radial-gradient(at 46% 18%, hsla(311,70%,64%,1) 0px, transparent 50%),
+  radial-gradient(at 89% 44%, hsla(200,84%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 16% 57%, hsla(350,74%,60%,1) 0px, transparent 50%),
+  radial-gradient(at 79% 64%, hsla(216,66%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 88% 9%, hsla(317,60%,75%,1) 0px, transparent 50%),
+  radial-gradient(at 24% 56%, hsla(301,61%,60%,1) 0px, transparent 50%),
+  radial-gradient(at 50% 53%, hsla(208,91%,76%,1) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 95vh;
+  /* box-sizing: border-box; */
+}
+h1, h2 { /* Need to change the font */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--text);
+}
+p, span, label {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+}
+ul {
+  margin-left: -20px;
+}
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  height: 10%;
+  margin-bottom: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--tertiary-color);
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 9.5px );
+  color: var(--text);
+  font-family: 'Roboto', sans-serif;
+}
+.preference-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.preference-select-card {
+  background-color: var(--tertiary-color);
+  box-shadow: 1px 3px 10px 0 rgba(255, 255, 255, 0.184) inset;
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 9.5px );
+  width: 40vw;
+  border-radius: 10px;
+  border: 1px solid rgba(240, 240, 240, 0.432);
+}
+.nav-controls {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.nav-controls p{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.question-container {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.save-next {
+  text-align: center;
+}
+
+#slider {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 30px 0px;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--secondary-color);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+#slider :hover {
+  opacity: 1;
+}
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--main-500);
+  opacity: 1;
+  cursor: pointer;
+}
+#slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--main-500);
+  cursor: pointer;
+}
+
+.textbox {
+  width: 60%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid var(--secondary-color);
+  color: var(--text);
+  font-size: 16px;
+  outline: none;
+  transform: all 0.5s ease;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.textbox:focus {
+  outline: none;
+  -webkit-appearance: none;
+  border: 2px solid var(--main-500);
+}
+.textbox[type=number]::-webkit-inner-spin-button
+.textbox[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+  background: url("url-fetch")
+}
+select.textbox > option {
+  color: var(--text);
+  margin: 10px 0px;
+}
+select.textbox::-webkit-outer-spin-button {
+  right: 10px;
+}
+
+.cta {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 15px 0px;
+  color: var(--main-500);
+  background-color: transparent;
+  transform: all 0.5s ease;
+}
+.cta:hover {
+  background-color: rgba(255, 255, 255, 0.129);
+  cursor: pointer;
+}
+.cta[disabled] {
+  color: transparent;
+  background-color: transparent;
+  cursor: auto;
+}
+#question-number {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.toggle {
+  /* position: fixed;
+  top: 30px;
+  left: 30px; */
+  width: 50px;
+  height: 50px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  /* background-color: #111; */
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  margin: 0 20px;
+  transition: all 0.2s;
+}
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 0;
+  /* padding: 40px 30px 20px 0px; */
+  height: 90%;
+  /* display: block; */
+  display: none;
+  box-sizing: border-box;
+  background-color: var(--tertiary-color);
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 9.5px );
+  border-right: 1px solid rgba(240, 240, 240, 0.432);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.menu.active {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.menu a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--text);
+  display: block;
+  padding: 10px 40px 10px 40px;
+  transition: all 0.5s;
+}
+.menu a:hover{
+  color: var(--main-500); 
+}
+.menu a svg{
+  position: relative;
+  top:2px;
+}
+.menu a.current {
+  background-color: var(--primary-color);
+}
+@media only screen and (max-width: 825px) {
+  .preference-select-card {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .menu.active {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .preference-select-card {
+    width: 85vw;
+  }
+  p, span, .cta, .textbox {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}

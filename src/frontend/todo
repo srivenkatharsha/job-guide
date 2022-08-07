@@ -1,0 +1,9 @@
+1. Create a welcome page. ---Done
+2. create a sign up page and sign in page.
+3. Create a homepage when user get's logged in.
+4. add a navbar to that homepage containing home,preferences, about us, contact us,profile.
+5. create a preferences page if user already has preferences tell them to edit the preferences if not ask them to create preferences, when they click the button take them to four pages in sequence which asks questions about particular preferences them to click button called submit and send my preferences to my email then redirect to homepage.
+
+6. Add profile page which presents profile icon name email preferences in order. (only for the user).
+
+7. add about us page,contact us page.

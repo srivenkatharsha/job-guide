@@ -1,0 +1,179 @@
+/* Variables for css */
+:root {
+  --primary-color: #ececec;
+  --secondary-color: #b9b9b9;
+  --tertiary-color: #ecececb5;
+  --main-500: #4299e1;
+  --main-400: #63b3ed;
+  --accent-one: #21649f;
+  --accent-two: #41B3A3;
+  --warning: #e29d60;
+  --error: #ee5645;
+  --text: #2b2b2b;
+  --button-text: #c3c3c3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #303030;
+    --secondary-color: #4f4f4f;
+    --tertiary-color: #303030b5;
+    --main-400: #4299e1;
+    --main-500: #63b3ed;
+    --accent-one: #448fd1;
+    --accent-two: #56c6b7;
+    --warning: #eeaf75;
+    --error: #ed7c70;
+    --text: #c3c3c3;
+    --button-text: #2b2b2b;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color:hsla(178,100%,50%,1);
+  background-image:
+  radial-gradient(at 32% 42%, hsla(166,95%,72%,1) 0px, transparent 50%),
+  radial-gradient(at 93% 7%, hsla(189,100%,56%,1) 0px, transparent 50%),
+  radial-gradient(at 92% 98%, hsla(235,100%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 94%, hsla(212,100%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 57% 37%, hsla(240,75%,54%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 0%, hsla(197,100%,76%,1) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+a, p, span, li {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+}
+a.cta {
+  text-align: center;
+  text-decoration: none;
+}
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.home-content-container {
+  display: flex;
+  flex-flow: row nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.content-row {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.rounded-info-card {
+  border-radius: 10px;
+  background: var(--tertiary-color);
+  width: 100%;
+  box-shadow: 1px 3px 10px 0 rgba(255, 255, 255, 0.184) inset;
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 9.5px );
+  border: 1px solid rgba(240, 240, 240, 0.432);
+  margin: 20px 0;
+}
+.card-content {
+  border-radius: 10px 10px 0 0;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.textbox {
+  width: 60%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid var(--secondary-color);
+  color: var(--text);
+  font-size: 16px;
+  outline: none;
+  transform: all 0.5s ease;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.textbox:focus {
+  outline: none;
+  -webkit-appearance: none;
+  border: 2px solid var(--main-500);
+}
+textarea.textbox {
+  width: 100%;
+  height: 10em;
+  resize: none;
+}
+.preference-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.profile-pic {
+  height: 180px;
+  width: 180px;
+  color: var(--text);
+}
+.cta {
+  width: 100%;
+  display: block;
+  border: none;
+  font-size: 16px;
+  padding: 15px 0px;
+  color: var(--main-500);
+  background-color: transparent;
+  transform: all 0.5s ease;
+}
+.cta:hover {
+  background-color: rgba(255, 255, 255, 0.129);
+  cursor: pointer;
+}
+.cta[disabled] {
+  /* color: transparent; */
+  color: #21649f;
+}
+
+.social-card {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.social-icon {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}
+.social-icon:hover {
+  translate: 0 -7px 0;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 825px) {
+  a, p, span, .cta {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .home-content-container {
+    flex-flow: column nowrap;
+  }
+  .content-row {
+    margin: 0;
+  }
+}
