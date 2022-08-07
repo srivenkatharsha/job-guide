@@ -1,4 +1,4 @@
-#JOB-GUIDE
+# JOB-GUIDE
 
 ## Inspiration
 We observed a lot of students who are trying to enter the corporate world, struggling to search for jobs online as there are many job portals. As a student you often find yourself lost in job information from different websites. And we started to wonder if all the jobs from the different websites based on my requirements/filters are available at one place where I can quickly navigate and apply to the desired job easily.
