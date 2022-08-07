@@ -33,3 +33,13 @@ As we have limited practical skillset in building full stack web applications we
 - We plan to further expand by adding support for various other job portals to our service.
 - We plan to integrate Machine Learning to improve the efficiency of scraping various other job portals and also give the user a more personalized experience.
 
+
+## Authors
+
+- [@srivenkatharsha](https://www.github.com/srivenkatharsha)
+- [@saiakshay](https://www.github.com/Sai-Akshay)
+
+
+
+
+
