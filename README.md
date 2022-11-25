@@ -28,12 +28,6 @@ As we have limited practical skillset in building full stack web applications we
 - Got experience in building applications that do CRUD operations.
 - Learned how to integrate front end with backend.
 
-## What's next for JOB GUIDE - ALL IN ONE SOLUTION FOR YOUR CAREER.
-
-- We plan to further expand by adding support for various other job portals to our service.
-- We plan to integrate Machine Learning to improve the efficiency of scraping various other job portals and also give the user a more personalized experience.
-
-
 ## Authors
 
 - [@srivenkatharsha](https://www.github.com/srivenkatharsha)
